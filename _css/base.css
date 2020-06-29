@@ -1,0 +1,304 @@
+/*==============================================================
+    Reset
+============================================================ */
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:Helvetica,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+html{background-color:#fff;color:#231f20;font-family:Helvetica,sans-serif;font-size:14px;}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+.category, .selectedcategory {
+    text-transform: uppercase;
+}
+.category, .selectedcategory {
+    border-bottom: none;
+    margin-right: 5px;
+}
+.category, .selectedcategory {
+    border-bottom: 1px dotted #fff;
+    cursor: pointer;
+    font-family: Futura Medium,sans-serif;
+    margin-bottom: 2px;
+    padding: 7px 5px;
+}
+.catName{background:#fff;text-transform:uppercase;font-family:"Futura Medium",sans-serif;}.catHead{height:auto;border:1px solid #fff}.cat-description{background:#fff;padding:10px 0}.category,.selectedcategory{text-transform:uppercase}.catName{margin-top:0}#catHead10005,#catHead10010,#catHead10015,#catHead10020,#catHead10025,#catHead10030,#catHead10035,#catHead10040,#catHead10045,#catHead10050,#catHead10055{background:#fff url(img/catHeaders-2.jpg) no-repeat}#catHead10005 .catName,#catHead10010 .catName,#catHead10015 .catName,#catHead10020 .catName,#catHead10025 .catName,#catHead10030 .catName,#catHead10035 .catName,#catHead10040 .catName,#catHead10045 .catName,#catHead10050 .catName,#catHead10055 .catName{margin-top:145px}#catHead10005{background-position:0 -3362px}#catHead10010{background-position:0 -2244px}#catHead10015{background-position:0 -3922px}#catHead10020{background-position:0 -2804px}#catHead10025{background-position:0 -4108px}#catHead10030{background-position:0 -3736px}#catHead10035{background-position:0 -4666px}#catHead10040{background-position:0 -4294px}#catHead10045{background-position:0 -3176px}#catHead10050{background-position:0 -2620px}#catHead10055{background-position:0 -2057px}#catHead16312{background-position:0 -2057px}#catHead16313{background-position:0 -2620px}#catHead16307{background-position:0 -4666px}
+.category,.selectedcategory{border-bottom:1px dotted #fff;cursor:pointer;font-family:"Futura Medium",sans-serif;margin-bottom:2px;padding:7px 5px}.category:hover,.selectedcategory:hover{color:#15605b}.selectedcategory{background:#15605b;border-radius:6px;color:#fff;margin-bottom:2px}#CategoryList:last-child{margin-right:0}
+#CategoryList{border-right:1px solid silver}.category,.selectedcategory{border-bottom:none;margin-right:5px}.category:hover,.selectedcategory,.selectedcategory:hover{background:#15605b;color:#fff;border-radius:0}
+
+#CategoryList {
+    border-right: 1px solid silver;
+}
+#ProductLst h2{
+    margin-left: 0;
+}
+h1{font-size:2em}h2{font-size:18px}h3{font-size:14px}
+
+.Products{border:none;}
+.Products .even,.Products .odd{background:0 0;padding:10px 0}
+.Products .product__attribute--price{display:inline-block;float:right;font-weight:600px;}
+.Products  {font-family:Helvetica,sans-serif}.Products .product__description{font-family:Helvetica,sans-serif}.Products .product-image{float:left}
+.Products .even,.Products .odd{min-height:4em}.Products{border:none;font-family:"Futura Medium",sans-serif}.Products li{height:auto}.Products li:after{content:"";display:table;clear:both}.Products .even{background:#fff}.Products .odd{background:#fff}.Products .product-name{font-size:18px}.product-image{cursor:pointer}
+.product__information{font-family:"Futura Medium",sans-serif;display:flex;flex-flow:row wrap;margin:0}.product__image{margin-right:10px}.product__information{margin-top:5px}
+.product-image{cursor:pointer}
+.product-image.read-only{cursor:default;text-decoration:none!important}
+.product__description{font-family:Helvetica,sans-serif;display:block; font-size:12px; margin-top:5px;width:100%}.product__attribute{font-size:14px ;font-weight:600;}.product__attribute+.product__attribute{margin-left:10px}
+.product-name,h1,h2,h3{font-family:"Futura Medium",sans-serif;text-transform:uppercase;font-weight:700}
+/* ============================================================
+    Sections
+============================================================ */
+body {
+    color:#333;
+    font:100%/1.5 Helvetica,sans-serif; /* 16px */
+   -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    background:#fff ;
+    margin:10 auto;
+}
+
+nav ul {
+    list-style:none;
+}
+
+@media screen and (min-width:35em) {
+h1 {
+	font-size:1.5em/1.1111; /* 40px */
+	line-height:1.2; /* 48px */
+	margin:0.5em 0 0; /* 20px 0 0 */
+}
+}
+h3 {
+    color:#2c1c16;
+    font:bold 1.125em/1.1111 'Proxima Nova Bold',sans-serif; /* 18px/20px */
+    margin:1.1111em 0 0; /* 20px 0 0 */
+}
+h4, h5, h6 {
+    color:#3c2c26;
+    font:bold 1em/1 'Proxima Nova Bold',sans-serif; /* 14px/16px */
+    margin:0.75em 0 -0.25em; /* 12px 0 -4px */
+}
+
+
+/* ============================================================
+    Grouping content
+============================================================ */
+p, pre, ol, ul, dl, figure, figcaption, table, fieldset {
+    margin:0.75em 0; /* 12px 0 */
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:2px solid #bcb3a6;
+    margin:1em 0;
+    padding:0;
+}
+
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+ul ul,
+ul ol {
+    margin-top:0;
+}
+li, dd {
+    margin-left:1.5em;
+}
+
+dt {
+    font-family:'Proxima Nova Bold',sans-serif;
+    font-weight:bold;
+}
+
+figure {
+    margin-top:2em;
+}
+
+figcaption, caption {
+    color:#666;
+    font-family:'Proxima Nova Regular',sans-serif;
+    font-size:0.875em; /* 14px */
+    line-height:1.1429; /* 16px */
+    text-align:left;
+    caption-side:bottom;
+    margin:0.8571em 0; /* 12px 0 */
+}
+
+
+/* ============================================================
+    Text-level semantics
+============================================================ */
+
+:lang(en-gb)>q {
+    quotes:"\201C" "\201D" "\2018" "\2019";
+    }
+    q::before { content:open-quote; }
+    q::after { content:close-quote;
+    }
+
+small {
+    font-size:0.875em; /* 14px */
+    line-height:1.1429; /* 16px */
+}
+
+abbr {
+    letter-spacing:1px;
+    }
+    abbr[title]:hover {
+        border-bottom:1px dotted rgba(0,0,0,0.2);
+        cursor:help;
+    }
+time {
+    color:#666;
+    font-family:'Proxima Nova Regular',sans-serif;
+    font-size:0.75em; /* 12px */
+    line-height:1.3334em; /* 16px */
+    text-transform:uppercase;
+}
+code, samp {
+    font:0.875em/90% Menlo,Monaco,'Courier New',Courier,monospace; /* 14px/90% */
+}
+code {
+    color:#369;
+}
+kbd {
+    color:#666;
+    font:normal normal 0.875em/90% sans-serif; /* 14px/90% */
+    background-color:#ffffff;
+    margin:0 0.25em; /* 0 4px */
+    border:1px solid #ccc6b6;
+    border-radius:4px;
+    padding:0.1429em 0.4286em; /* 2px 6px */
+}
+sub {
+    font-size:smaller;
+    line-height:90%;
+    vertical-align:sub;
+}
+sup {
+    font-size:smaller;
+    line-height:90%;
+    vertical-align:super;
+}
+
+/* ============================================================
+    Edits
+============================================================ */
+mark, ins {
+    background-color:#ffc;
+    text-decoration:none;
+}
+del {
+    text-decoration: line-through;
+}
+
+
+/* ============================================================
+    Embedded content
+============================================================ */
+
+
+/* ============================================================
+    Tabular data
+============================================================ */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+td, th {
+    text-align:left;
+    border-bottom:1px solid #bcb3a6;
+    padding:0.25em 1em 0.1875em 0; /* 4px 16px 3px 0 */
+}
+th {
+    color:#222;
+    font:bold 0.875em/1.1429 'Proxima Nova Bold',sans-serif; /* 14px/16px */
+    border-bottom-color:#bcb3a6;
+    padding:0.5714em 0 0.5em; /* 8px 0 7px */
+}
+td {
+    vertical-align:top;
+}
+
+
+/* ============================================================
+    Forms
+============================================================ */
+.field {
+    font:1em/1.5 sans-serif;
+    border:1px solid #bcb3a6;
+    padding:0.25em;
+    width:50%;
+}
+label {
+    font-weight:bold;
+    line-height:1.5;
+    margin:0.25em 0;
+    display:block;
+    float:left;
+    width:20%;
+}
+label.check {
+    font-weight:normal;
+    margin-left:20%;
+    float:none;
+}
+fieldset div {
+    margin:0.75em 0;
+}
+fieldset abbr[title="Required"] {
+    color:#900;
+    font:normal 1.5em/0.1 sans-serif; /* 20px */
+    border-bottom:0 none;
+}
+fieldset em {
+    color:#666;
+    font-family:sans-serif;
+    font-style:normal;
+    font-size:0.875em; /* 14px */
+    line-height:1.1429; /* 16px */
+    margin:0.25em 0 0.25em 20%;
+    display:block;
+}
+fieldset.options {
+    clear:left;
+}
+fieldset.options ul {
+    list-style:none;
+    margin:0.25em 0 0.25em 20%;
+}
+fieldset.options li {
+    margin-left:0;
+}
+fieldset.options ul label {
+    float:none;
+    width:auto;
+    font-weight:normal;
+}
