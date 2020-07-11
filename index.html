@@ -42,7 +42,7 @@
 				var accountName = $('#name').val();
 				if(accountName!= ''){
 				//replace the below url with your domain name or yourInstance.salesforce.com
-					var requestUrl = 'https://cors-anywhere.herokuapp.com/https://test.salesforce.com/services/data/v20.0/sobjects/Account/';
+					var requestUrl = 'https://test.salesforce.com/services/data/v20.0/sobjects/Account/';
 					//create a javascript object with the account field values
 					var accountInfo = {
 						"Name" :accountName
@@ -54,6 +54,8 @@
 					  type: 'POST',
 					  url : requestUrl,
 					  //add the authorization header including the access_token
+					  crossDomain: true,
+					  instance_url: 'https://starfireed--dev.lightning.force.com/',
 					  headers : {
 						'Authorization' : 'Bearer '+accessToken,
 						 'Content-Type' : 'application/json'
