@@ -12,10 +12,11 @@
       <button id="button">Submit</button>
       <div id="status"></div>
       <script type="text/javascript">
+	var accessToken;
         $(document).ready(function(){
        //Get access token.
        //Because the access token is a URL parameter it needs to be decoded
-          var accessToken = decodeURI(GetURLParameter('access_token'));
+          accessToken = decodeURI(GetURLParameter('access_token'));
           console.log(accessToken);
  
            //Use this function to get the access token from the URL
