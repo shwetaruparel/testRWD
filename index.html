@@ -30,9 +30,10 @@
                   if (sParameterName[0] == sParam) 
                     {
                       return sParameterName[1];
-                      }
-                  }
-               }
+                    }
+                }
+			}
+		});
 
 			//Create Account Record button click
 			$('#button').click(function(){
@@ -40,43 +41,43 @@
 				var accountName = $('#name').val();
 				if(accountName!= ''){
 				//replace the below url with your domain name or yourInstance.salesforce.com
-				var requestUrl = 'https://eu5.salesforce.com/services/data/v20.0/sobjects/Account/';
-				//create a javascript object with the account field values
-				var accountInfo = {
-					"Name" :accountName
-									}
-				//convert the object to a JSON string
-				var accountInfoJson = JSON.stringify(accountInfo);
-				//send POST with ajax
-				$.ajax({
-				  type: 'POST',
-				  url : requestUrl,
-				  //add the authorization header including the access_token
-				  headers : {
-					'Authorization' : 'Bearer '+accessToken,
-					 'Content-Type' : 'application/json'
-							  },
-				   data : accountInfoJson,
-				   success : function(response){
-								displayAccountInfo(response);
-										},
-				   error: function(response){
-								displayError(response);
+					var requestUrl = 'https://test.salesforce.com/services/data/v20.0/sobjects/Account/';
+					//create a javascript object with the account field values
+					var accountInfo = {
+						"Name" :accountName
 										}
-									});
+					//convert the object to a JSON string
+					var accountInfoJson = JSON.stringify(accountInfo);
+					//send POST with ajax
+					$.ajax({
+					  type: 'POST',
+					  url : requestUrl,
+					  //add the authorization header including the access_token
+					  headers : {
+						'Authorization' : 'Bearer '+accessToken,
+						 'Content-Type' : 'application/json'
+								  },
+					   data : accountInfoJson,
+					   success : function(response){
+									displayAccountInfo(response);
+											},
+					   error: function(response){
+									displayError(response);
+											}
+					});
 			 
-					 }else{
+				}else{
 						alert('Please specify name');
-						 }
+				}
 			 
-				});
+			});
 			//If account is successfully created
 			function displayAccountInfo(responseObject){
 			  var statusMessage = '<p>Success! Your account has been created, click on the link below.</p>';
 			  $('#status').append(statusMessage);
 			  $('<a>',{//replace this with your salesforce instance url
-				text: 'https://eu5.salesforce.com/'+responseObject.id,
-				href: 'https://eu5.salesforce.com/'+responseObject.id,
+				text: 'https://test.salesforce.com/'+responseObject.id,
+				href: 'https://test.salesforce.com/'+responseObject.id,
 				target : '_blank'
 			   }).appendTo($('#status'));
 			}
