@@ -42,7 +42,7 @@
 				var accountName = $('#name').val();
 				if(accountName!= ''){
 				//replace the below url with your domain name or yourInstance.salesforce.com
-					var requestUrl = 'https://starfireed--dev.lightning.force.com/services/data/v20.0/sobjects/Account/';
+					var requestUrl = 'https://cors-anywhere.herokuapp.com/https://starfireed--dev.lightning.force.com/services/data/v20.0/sobjects/Account/';
 					//create a javascript object with the account field values
 					var accountInfo = {
 						"Name" :accountName
