@@ -42,7 +42,7 @@
 				var accountName = $('#name').val();
 				if(accountName!= ''){
 				//replace the below url with your domain name or yourInstance.salesforce.com
-					var requestUrl = 'https://cors-anywhere.herokuapp.com/https://starfireed--dev.lightning.force.com/services/data/v20.0/sobjects/Account/';
+					var requestUrl = 'https://cors-anywhere.herokuapp.com/https://starfireed--dev.my.salesforce.com/services/data/v20.0/sobjects/Account/';
 					//create a javascript object with the account field values
 					var accountInfo = {
 						"Name" :accountName
@@ -79,8 +79,8 @@
 			  var statusMessage = '<p>Success! Your account has been created, click on the link below.</p>';
 			  $('#status').append(statusMessage);
 			  $('<a>',{//replace this with your salesforce instance url
-				text: 'https://starfireed--dev.lightning.force.com/'+responseObject.id,
-				href: 'https://starfireed--dev.lightning.force.com/'+responseObject.id,
+				text: 'https://starfireed--dev.my.salesforce.com/'+responseObject.id,
+				href: 'https://starfireed--dev.my.salesforce.com/'+responseObject.id,
 				target : '_blank'
 			   }).appendTo($('#status'));
 			}
