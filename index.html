@@ -76,6 +76,7 @@
 			});
 			//If account is successfully created
 			function displayAccountInfo(responseObject){
+			 console.log(responseObject);
 			  var statusMessage = '<p>Success! Your account has been created, click on the link below.</p>';
 			  $('#status').append(statusMessage);
 			  $('<a>',{//replace this with your salesforce instance url
